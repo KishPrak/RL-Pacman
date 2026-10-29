@@ -30,6 +30,17 @@
 # The code here was written by Simon Parsons, based on examples from
 # the PacMan AI projects.
 
+
+"""
+api.whereAmI(state)	(x, y)	Pacman's current coordinates
+api.corners(state)	List of four coordinates	Determine grid width and height
+api.walls(state)	List of (x, y)	Identify blocked positions
+api.food(state)	List of (x, y)	Find remaining food for your reward function
+api.capsules(state)	List of (x, y)	Find remaining power capsules
+api.ghostStates(state)	[((x,y), status), ...]	Ghost positions and whether they're edible
+api.ghostStatesWithTimes(state)	[((x,y), timer), ...]	Ghost positions and remaining vulnerability times
+api.legalActions(state)	List of directions	Determine legal actions at Pacman's current position
+"""
 from random import random
 from pacman import Directions
 import util
